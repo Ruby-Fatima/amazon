@@ -192,3 +192,72 @@ span {
 .box-content p {
      color: #00f185;
 }
+#menu-toggle {
+    display: none;
+}
+
+/* hamburger icon */
+.menu-icon {
+    display: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    
+.panel{
+    display: none;
+}
+.box{
+    width: 90%;
+}
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+    }
+
+    .nav-logo {
+        margin-left: auto;
+    }
+
+    .nav-search,
+    .nav-sign,
+    .nav-Return,
+    .nav-cart,
+    .nav-add {
+        display: none;
+        width: 100%;
+        background: #0f1111;
+        padding: 10px;
+        border-top: 1px solid #333;
+    }
+
+    /* toggle open */
+    #menu-toggle:checked ~ .nav-search,
+    #menu-toggle:checked ~ .nav-sign,
+    #menu-toggle:checked ~ .nav-Return,
+    #menu-toggle:checked ~ .nav-cart,
+    #menu-toggle:checked ~ .nav-add {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-msg {
+        font-size: 0.7rem;
+        width: 95%;
+    }
+}
